@@ -23,6 +23,10 @@ import "github.com/containerd/containerd/api/types/fieldpath.proto";
 option go_package = "github.com/containerd/containerd/api/events;events";
 option (containerd.types.fieldpath_all) = true;
 
+message ContentCreate {
+	string digest = 1;
+}
+
 message ContentDelete {
 	string digest = 1;
 }
